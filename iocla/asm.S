@@ -23,6 +23,7 @@ good:
     push eax
     call puts
     pop eax
+		ret
 bad:
     lea eax, [wrong]
     push eax
