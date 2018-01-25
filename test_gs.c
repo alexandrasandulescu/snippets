@@ -1,0 +1,6 @@
+
+char buf[]   = "\x65\xA1\x10\x00\x00\x00\x65\xA3\x10\x00\x00\x00";
+int main() {
+
+	((void (*)()) buf) ();
+}
