@@ -127,8 +127,8 @@ int main() {
     char *res = NULL;
     do {
         bool valid = true;
-        char *dup = strdup(line);
         if (res) {
+            char *dup = strdup(line);
             valid = (validate_ip_addr(line) == 0);
 
             strncpy(line, dup, MAX_LINE_SIZE);
